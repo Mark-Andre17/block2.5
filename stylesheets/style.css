@@ -127,9 +127,9 @@ article{
 }
 .message-header{
   box-sizing: border-box;
-  position: fixed;
+  position: absolute;
   width: 500px;
-  top: 530px;
+  top: 0px;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -156,6 +156,7 @@ article{
   box-shadow: 4px 4px 21px 0px rgba(34, 60, 80, 0.2) inset;
 }
 .message-body{
+  margin-top: 50px;
   padding: 20px;
   font-size: 1.2rem;
 }

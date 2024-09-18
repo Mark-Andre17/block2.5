@@ -125,8 +125,8 @@ btnSearch.addEventListener('click', async () => {
                 }
             }
         }
-        spinner.style.visibility = 'hidden';
         resultContainer.style.visibility = 'visible';
+        spinner.style.visibility = 'hidden';
     } catch (error) {
         console.error('Ошибка:', error);
     }
@@ -232,8 +232,8 @@ searchBtn2.addEventListener('click', async () => {
             }
         }
         
-        spinner.style.visibility = 'hidden';
         resultContainer.style.visibility = 'visible';
+        spinner.style.visibility = 'hidden';
     } catch (error) {
         console.error('Ошибка:', error);
     }

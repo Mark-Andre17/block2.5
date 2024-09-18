@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Библиотека иконок Fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <!-- Наши стили -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <!-- Библотека методов для получения данных про Star Wars -->
+  <script defer src="lib/star-wars.js"></script>
+  <!-- Скрипт, который вам предстоит написать! -->
+  <script defer src="scripts/search.js"></script>
+
+  <title>STAR WARS</title>
+</head>
+<body>
+  <header>
+    <div class="header-title">
+      <h1 class="title">STAR WARS</h1>
+      <figure>
+        <audio controls preload="metadata">
+          <source src="./audio/Star Wars - Star Wars Main Title_(audiodevil.ru).mp3" type="audio/mpeg">
+        </audio>
+      </figure>
+    </div>
+  </header>
+  <main>
+    <section class="first-search">
+      <div id="byQueryBlock" class="first-search-form">
+        <select name="choiceStarWars" id="" class="first-select">
+          <option value="people" selected>people</option>
+          <option value="planets">planets</option>
+          <option value="species">species</option>
+        </select>
+        <input class="first-search-input" type="text" placeholder="Search...">
+        <button id="byQueryBtn" class="first-search-button">Search</button>
+      </div>
+    </section>
+    <div class="or">OR</div>
+    <section class="second-search">
+      <div id="byQueryBlock" class="second-search-form">
+        <select name="choiceStarWars" id="" class="second-select">
+          <option value="people" selected>people</option>
+          <option value="planets">planets</option>
+          <option value="species">species</option>
+        </select>
+        <input class="second-search-input" type="text" placeholder="get by id...">
+        <button id="byQueryBtn" class="second-search-button">Search</button>
+      </div>
+    </section>
+    <div class="spinnerContainer">
+      <img class="spinner" src="images/dv.png" alt="">
+    </div>
+    <section class="result">
+      <div id="result-container" class="result-container">
+        <article class="message is-dark">
+          <div class="message-header">
+            <p>Primary</p>
+            <button class="delete" aria-label="delete">x</button>
+          </div>
+          <div id="content" class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
+            placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et
+            dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales,
+            arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna,
+            vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

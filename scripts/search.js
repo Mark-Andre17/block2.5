@@ -135,13 +135,9 @@ btnSearch.addEventListener('click', async () => {
 
 // ВТОРАЯ ПОИСКОВАЯ СТРОКА
 let secondChoiceBtn = document.querySelector('.second-select')
-console.log(secondChoiceBtn);
 let secondInput = document.querySelector('.second-search-input')
-console.log(secondInput);
 let searchBtn2 = document.querySelector('.second-search-button')
-console.log(searchBtn2);
 let choiceResult2 = secondChoiceBtn.value
-console.log(choiceResult2);
 
 let resultSearch2 = '';
 secondChoiceBtn.addEventListener('change',  (e) => {
@@ -155,7 +151,6 @@ secondInput.addEventListener('change',(e) => {
 })
 searchBtn2.addEventListener('click', async () => {
     try {
-        const valid = /^[0-9]+$/
         if (resultSearch2 === '') {
             alert('Пожалуйста, введите число в строке поиска');
             throw new Error('Input is empty');

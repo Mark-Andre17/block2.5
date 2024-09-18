@@ -128,7 +128,7 @@ article{
 .message-header{
   box-sizing: border-box;
   position: absolute;
-  width: 483px;
+  width: 495px;
   top: 0px;
   background-color: black;
   display: flex;

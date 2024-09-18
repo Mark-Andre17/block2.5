@@ -142,7 +142,7 @@ let choiceResult2 = secondChoiceBtn.value
 let resultSearch2 = '';
 secondChoiceBtn.addEventListener('change',  (e) => {
     choiceResult2 = e.target.value;
-    resultSearch2= '';
+    resultSearch2 = '';
     secondInput.value = '';
     resultContainer.style.visibility = 'hidden';
 })

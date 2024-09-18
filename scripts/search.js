@@ -55,7 +55,6 @@ btnSearch.addEventListener('click', async () => {
         
         const starWarsInfo = await searchObject[choiceResult][0](resultSearch);
         
-        resultContainer.style.visibility = 'visible';
         
         for (const item of starWarsInfo.results) {
             messageHeader.innerHTML = `${item.name}`;
@@ -127,6 +126,7 @@ btnSearch.addEventListener('click', async () => {
             }
         }
         spinner.style.visibility = 'hidden';
+        resultContainer.style.visibility = 'visible';
     } catch (error) {
         console.error('Ошибка:', error);
     }
@@ -232,10 +232,8 @@ searchBtn2.addEventListener('click', async () => {
             }
         }
         
-        
-        resultContainer.style.visibility = 'visible';
-
         spinner.style.visibility = 'hidden';
+        resultContainer.style.visibility = 'visible';
     } catch (error) {
         console.error('Ошибка:', error);
     }
